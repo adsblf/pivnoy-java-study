@@ -15,4 +15,6 @@
     <include file="init-data/v1.0.3_init_data_reader.xml" relativeToChangelogFile="true"/>
     <include file="init-data/v1.0.4_init_data_security_tables.xml" relativeToChangelogFile="true"/>
     <include file="init-data/v1.0.5_init_data_publishing_house.xml" relativeToChangelogFile="true"/>
+    <include file="init-data/v1.1.0_add_publishing_house_to_book.xml" relativeToChangelogFile="true"/>
+    <include file="init-data/v1.2.0_update_book_publishing.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
