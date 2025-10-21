@@ -38,4 +38,7 @@ public class Book {
         return new HashSet<>(Arrays.asList(tagArray));
     }
 
+    @ManyToOne
+    @JoinColumn(name = "publishing_house_id")
+    private PublishingHouse publishingHouse;
 }
