@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="add-data-publishing-house" author="Aleksey Berezhnov">
+        <insert tableName="PUBLISHING_HOUSE">
+            <column name="title" value="Эксмо"/>
+            <column name="address" value="123308, г. Москва, ул. Зорге, д. 1, стр. 1, этаж 20 каб 2013"/>
+        </insert>
+
+        <insert tableName="PUBLISHING_HOUSE">
+            <column name="title" value="АСТ"/>
+            <column name="address" value="Москва, Пресненская набережная, 6, стр. 2, метро «Деловой центр»"/>
+        </insert>
+
+        <insert tableName="PUBLISHING_HOUSE">
+            <column name="title" value="Бомбора"/>
+            <column name="address" value="Хуево-кукуево"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

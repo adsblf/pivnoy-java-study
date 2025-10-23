@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="add_publishing_house_to_book" author="Aleksey Berezhnov">
+        <addColumn tableName="book">
+            <column name="publishing_house_id" type="INT"/>
+        </addColumn>
+
+        <addForeignKeyConstraint baseTableName="book"
+                                 baseColumnNames="publishing_house_id"
+                                 referencedTableName="publishing_house"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_book_publishing_house"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,12 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="update_book_publishing" author="Aleksey Berezhnov">
+        <update tableName="book">
+            <column name="publishing_house_id" valueNumeric="1"/>
+            <where>publishing_house_id IS NULL</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>
