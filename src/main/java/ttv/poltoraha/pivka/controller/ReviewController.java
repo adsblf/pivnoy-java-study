@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ttv.poltoraha.pivka.dao.request.ReviewRequestDto;
+import ttv.poltoraha.pivka.dto.request.ReviewRequestDto;
 import ttv.poltoraha.pivka.service.ReviewService;
 
 @RestController

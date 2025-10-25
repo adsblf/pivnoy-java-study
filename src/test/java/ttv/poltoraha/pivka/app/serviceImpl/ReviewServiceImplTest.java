@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-import ttv.poltoraha.pivka.dao.request.ReviewRequestDto;
+import ttv.poltoraha.pivka.dto.request.ReviewRequestDto;
 import ttv.poltoraha.pivka.entity.Book;
 import ttv.poltoraha.pivka.entity.Review;
 import ttv.poltoraha.pivka.repository.BookRepository;
