@@ -5,11 +5,8 @@ import lombok.val;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ttv.poltoraha.pivka.entity.Book;
 import ttv.poltoraha.pivka.entity.Review;
 import ttv.poltoraha.pivka.repository.AuthorRepository;
-
-import java.util.Arrays;
 
 // Джобы - это штука, которая выполняет раз в энное время. Удобно, чтобы наше приложение долго не висело при
 // каких-то долгих/трудоёмких задачах. Крутится себе на фоне и пускай
