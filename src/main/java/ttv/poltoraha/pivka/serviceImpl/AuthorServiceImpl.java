@@ -28,9 +28,6 @@ public class AuthorServiceImpl implements AuthorService {
         authorRepository.save(author);
     }
 
-    //todo Можно попробовать сделать update
-    //todo можно попробовать сделать deleteBook
-
     @Override
     public void delete(Integer id) {
         authorRepository.deleteById(id);
