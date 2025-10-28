@@ -1,7 +1,9 @@
 package ttv.poltoraha.pivka.mapping;
 
 import org.springframework.stereotype.Component;
-import ttv.poltoraha.pivka.dao.request.ReviewRequestDto;
+import ttv.poltoraha.pivka.dto.request.AuthorRequestDto;
+import ttv.poltoraha.pivka.dto.request.ReviewRequestDto;
+import ttv.poltoraha.pivka.entity.Author;
 import ttv.poltoraha.pivka.entity.Book;
 import ttv.poltoraha.pivka.entity.Review;
 
@@ -14,6 +16,13 @@ public class MappingUtil {
                 .text(dto.getText())
                 .readerUsername(dto.getReaderUsername())
                 .rating(dto.getRating())
+                .build();
+    }
+
+    public static Author fromRequestDto(AuthorRequestDto dto) {
+        return Author.builder()
+                .fullName(dto.getFullName())
+                .avgRating(dto.getAvgRating())
                 .build();
     }
 
