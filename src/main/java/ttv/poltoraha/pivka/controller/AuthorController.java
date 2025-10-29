@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import ttv.poltoraha.pivka.dto.request.AuthorRequestDto;
 import ttv.poltoraha.pivka.entity.Author;
 import ttv.poltoraha.pivka.entity.Book;
 import ttv.poltoraha.pivka.service.AuthorService;
@@ -21,8 +22,8 @@ public class AuthorController {
     private final AuthorService authorService;
 
     @PostMapping("/create")
-    public void createAuthor(@RequestBody Author author) {
-        authorService.create(author);
+    public void createAuthor(@RequestBody AuthorRequestDto authorRequestDto) {
+        authorService.create(authorRequestDto);
     }
 
     @PostMapping("/delete")

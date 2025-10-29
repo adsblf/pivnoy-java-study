@@ -13,6 +13,9 @@ import java.util.List;
 // Энтити - это привязка класса к конкретной табличке в БД
 @Entity(name="author")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class Author {
     @Id

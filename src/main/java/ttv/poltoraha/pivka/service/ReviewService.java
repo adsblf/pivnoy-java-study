@@ -1,6 +1,6 @@
 package ttv.poltoraha.pivka.service;
 
-import ttv.poltoraha.pivka.dao.request.ReviewRequestDto;
+import ttv.poltoraha.pivka.dto.request.ReviewRequestDto;
 
 public interface ReviewService {
     public void createReview(ReviewRequestDto requestDto);
