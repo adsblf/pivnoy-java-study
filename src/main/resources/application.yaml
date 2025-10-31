@@ -36,6 +36,20 @@ web:
   base-url: localhost:9090
   connection-timeout: 2s
   read-timeout: 2s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,httptrace
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    enable:
+      all: true
+  server:
+    port: 8080
 
 book-facts:
   facts:
