@@ -83,7 +83,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.42</version>
         </dependency>
-<!--		Зависимости для логгирования-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>3.4.5</version>
+        </dependency>
     </dependencies>
 
 	<build>
